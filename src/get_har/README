@@ -1,0 +1,13 @@
+### 获取har特征 ###
+
+    将域名文件放入到此文件所在的文件夹中，命名为domain.txt
+
+    运行./browsermob-proxy-2.0-beta-6/bin/browsermob-proxy.bat
+
+    在此文件所在目录中运行get_har.py
+
+    目录中的har_features.txt即为har特征
+    （七项：[third_party_requests, total_requests, 
+    third_party_body_size, third_party_content_size, 
+    total_content_size, first_body_size, total_body_size]）
+

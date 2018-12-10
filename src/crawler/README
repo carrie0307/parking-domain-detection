@@ -1,0 +1,27 @@
+### 爬取html源码 ###
+
+    在当前目录下执行
+    pip install -r requirements.txt
+
+    将自己要爬的域名文件放在./crawler目录下
+
+    修改./crawler/spiders/web_content_spider.py中
+    domain_file
+    exception_file
+    save_dir
+    三个路径
+
+    在当前目录下执行
+    scrapy crawl kuan 
+
+
+### 过滤没有爬取到html源码的域名 ###
+
+    将域名文件改为new_domain_now.txt
+
+    saved_source为爬到的源码
+
+    在\crawler\crawler目录中运行filter.py
+
+    filter_domain.txt为过滤结果文件
+

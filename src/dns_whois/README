@@ -1,0 +1,17 @@
+1. Install the requirements
+
+tldextract
+whois
+
+2. Put the filter_domain.txt in the this directory
+
+3. Change the variable [self.domain_file] located in crawl_dns_whois.py [line 12]
+
+4. execute this script
+
+5. After finish the crawling
+
+6. use the Query API to get what you want
+
+[!!!!] If the spider stop accidentally, you should delete the domain, which
+already recorded, in [self.domain_file], and then restart the spider again. 

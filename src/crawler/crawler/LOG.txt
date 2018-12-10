@@ -1,0 +1,46 @@
+2018-11-13 23:41:32 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: crawler)
+2018-11-13 23:41:32 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.7.1 (default, Oct 23 2018, 19:19:42) - [GCC 7.3.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.1  11 Sep 2018), cryptography 2.3.1, Platform Linux-4.15.0-38-generic-x86_64-with-debian-buster-sid
+2018-11-13 23:41:32 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawler', 'CONCURRENT_REQUESTS': 8, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 90, 'LOG_FILE': 'LOG.txt', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'crawler.spiders', 'REDIRECT_ENABLED': False, 'RETRY_ENABLED': False, 'SPIDER_MODULES': ['crawler.spiders']}
+2018-11-13 23:41:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-13 23:41:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-13 23:41:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-13 23:41:32 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-11-13 23:41:32 [scrapy.core.engine] INFO: Spider opened
+2018-11-13 23:41:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-13 23:41:33 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/roger-hwong/software/anaconda3/envs/spider/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/home/roger-hwong/Desktop/Domain_Security_Project/crawler/crawler/spiders/web_content_spider.py", line 27, in start_requests
+    self.load_domain_file()
+  File "/home/roger-hwong/Desktop/Domain_Security_Project/crawler/crawler/spiders/web_content_spider.py", line 43, in load_domain_file
+    with open(domain_file, mode="r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../new_domain_1.txt'
+2018-11-13 23:41:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-13 23:41:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 13, 15, 41, 33, 123370),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'memusage/max': 53080064,
+ 'memusage/startup': 53080064,
+ 'start_time': datetime.datetime(2018, 11, 13, 15, 41, 33, 49159)}
+2018-11-13 23:41:33 [scrapy.core.engine] INFO: Spider closed (finished)

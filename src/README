@@ -1,0 +1,31 @@
+### crawler ###
+
+作者：Huang ZH
+爬取html的源码
+
+
+### dns_whois ###
+
+作者： Huang ZH
+爬取dns和whois信息的源码
+
+
+### get_har ###
+
+作者： Wang ZX
+爬取har以及提取har特征的源码
+
+
+### construct_model ###
+
+作者：C SY
+原始数据统计与标注,提取特征、特征构建、RandomForest特征评价、训练k-means聚类模型、typo域名检测
+
+
+### data_EDA.ipynb ###
+
+作者： Huang ZH
+数据分析及图表
+
+
+各个模块具体内容，查看各模块下readme即可
