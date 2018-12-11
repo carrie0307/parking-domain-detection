@@ -2,6 +2,8 @@
 
 * UCAS 域名安全技术课程大作业, 要求从老师给定的300w域名中检测出Parking Domains
 
+* 感谢一起完成作业的队友[Huang ZH](https://github.com/ZR-Huang) & [Wang ZX](https://github.com/Lorwin666)
+
 * 具体内容见pdf文件
 
 * src目录下包含了各个模块源代码，并都附有响应README说明
@@ -23,8 +25,6 @@
     * 域名相关信息查询网站 https://securitytrails.com , 能够直接查到具有相同DNS记录的域名
 
     * Microsoft Machine Learning Studio: https://studio.azureml.net/ 根据同学上课讲述能够提供一些可视化例子;
-
-* 感谢一起完成作业的队友Huang ZH & Wang ZX
 
 ### 列出几个Parking Domain的实例
 
